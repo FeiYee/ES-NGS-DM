@@ -1,0 +1,25 @@
+# Project-owned ES-NGS-DM extensions. Solver dependencies are installed separately.
+name = "ESNGSDM"
+uuid = "f1bf4741-000c-4e01-b4c6-e872dff8e099"
+authors = ["ES-NGS-DM contributors"]
+version = "0.2.0"
+
+[deps]
+DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"
+Distances = "b4f34e82-e78d-54a5-968a-f98e89d6e8f7"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+SHA = "ea8e919c-243c-51af-8825-aaa63cd721ce"
+TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
+TravelingSalesmanHeuristics = "8c8f4381-2cdd-507c-846c-be2bcff6f45f"
+
+[compat]
+DelimitedFiles = "1"
+Distances = "0.10.12"
+TravelingSalesmanHeuristics = "0.3.4"
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

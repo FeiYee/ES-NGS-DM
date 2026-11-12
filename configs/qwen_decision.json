@@ -1,0 +1,13 @@
+{
+  "repo":"Qwen/Qwen2.5-1.5B",
+  "revision":"8faed761d45a263340a0528343f099c05c9a4323",
+  "protocol":"supplement_20261108",
+  "backbone_layers":8,"numeric_dim":48,"max_length":8192,"position_mode":"candidate",
+  "lora_r":8,"lora_alpha":16,"lora_dropout":0.05,"target_modules":["q_proj","v_proj"],
+  "epochs":4,"lr":0.0002,"head_lr":0.0008,"grad_accum":8,"choice_temp":1,"weight_decay":0.0001,"gradient_clip_norm":1,
+  "loss_weights":{"choice":1,"gain_huber":0.25,"component_huber_each":0.08,"consistency_huber":0.05,"feasibility_bce":0.2},
+  "gain_regression_scale":10,"seed":2026110806,
+  "exported_residual_scale":0.10665960609912872,
+  "online_role":"none; lightweight ESNGSCritic runs online",
+  "legacy_response_sft":{"script":"repro/es_ngs/qwen_exp/scripts/train_qwen_lora.py","role":"optional historical response-only SFT, distinct from direct decision-head training","lora_r":16,"lora_alpha":32,"lora_dropout":0.05,"epochs":3,"lr":0.0002,"batch_size":1,"grad_accum":8,"target_modules":["q_proj","k_proj","v_proj","o_proj","gate_proj","up_proj","down_proj"]}
+}

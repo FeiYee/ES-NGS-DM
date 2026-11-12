@@ -1,0 +1,6 @@
+-r requirements.txt
+transformers==5.10.2
+peft==0.21.2
+accelerate==1.13.0
+safetensors==0.7.0
+huggingface_hub==1.17.0

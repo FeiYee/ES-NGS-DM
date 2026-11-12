@@ -1,0 +1,7 @@
+total_labels=28800
+n_states=480
+n_base_states=120
+n_replay_states=360
+base_max_state_id=120
+feature_version=2
+merged_from=labels_v2+labels_v2_replay

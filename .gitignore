@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+outputs/
+.cache/
+models/
+.julia/
+*.tmp
+.env
+*.pem
+*.key
+*.log
+*.pid
+*.tar.gz

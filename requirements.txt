@@ -1,0 +1,6 @@
+# Lightweight training, inference, and diagnostics. GPU wheels are selected separately.
+torch==2.12.1
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+tomli>=2.0; python_version < "3.11"

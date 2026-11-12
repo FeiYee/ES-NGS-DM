@@ -1,0 +1,9 @@
+{
+  "objective": "minimize_delivery_completion_time_h",
+  "label": "100 * (T_before - T_after) / T_before",
+  "model": {"node_dim":24,"act_dim":32,"glob_dim":16,"local_nodes":32,"d_model":64,"nhead":4,"nlayers":3,"n_rel":8,"dropout":0.1},
+  "ranking": {"online_feas_weight":1.0,"probability_floor":0.000001},
+  "search": {"propose_n":64,"top_k":1,"window":3,"diversity":false,"station_path_mode":"pareto","acceptance_tolerance_h":1e-9,"search_seeds":[1,2,3,4,5],"rng_seed_offset":300001},
+  "physical": {"truck_speed_km_h":40,"drone_speed_km_h":60,"truck_capacity_km_equivalent":100,"drone_capacity_km_equivalent":20,"shared_energy_factor":0.4,"swap_service_min":2,"launch_service_s":100,"retrieval_service_s":20},
+  "timing": {"charged_online_budget_s":60,"neural_safety_pad_s":5,"minimum_iteration_remaining_s":0.35,"smaller_pool_threshold_s":2,"smaller_pool_size":32,"model_startup_excluded":true,"fresh_initialization_charged":true,"final_validation_charged":true}
+}

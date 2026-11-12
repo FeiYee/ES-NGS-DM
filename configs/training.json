@@ -1,0 +1,12 @@
+{
+  "optimizer":"AdamW","weight_decay":0.0001,"gradient_clip_norm":1.0,
+  "decomposition_loss":{"total_gain_mse":1,"component_mse_each":0.5,"consistency_mse":0.1},
+  "historical_deployment":{
+    "checkpoint":"checkpoints/es_ngs_dm.pt",
+    "source_checkpoint_sha256":"b1bf0ae6f8f9cfaf43aec22f5d2c221dbeceada82a91275083a38bad78213cc3",
+    "stage1":{"variant":"exact_softlabel","epochs":40,"batch_size":4,"lr":0.0002,"rank_w":1,"kd_w":0.5,"feas_w":0.5,"seed":0,"selected_epoch":39},
+    "stage2":{"variant":"full_v3","epochs":12,"batch_size":4,"lr":0.00002,"rank_w":1,"soft_w":0.5,"kd_w":0.1,"kd_temp":1,"feas_w":0.5,"online_feas_weight":1,"seed":20261024,"teacher_name":"jev_direct","checkpoint_selection":"last_epoch_all_data"}
+  },
+  "independent_exact_cv":{"group":"instance_id","folds":5,"init":"random","epochs":20,"lr":0.0002,"batch_size":4,"rank_w":1,"soft_w":0.5,"feas_w":0.5,"seed_rule":"20261027 + fold","checkpoint_selection":"last_epoch"},
+  "supplement_20261108":{"data":"data/training","states":480,"instances":40,"folds":5,"base_epochs":40,"matched_final_epochs":12,"batch_size":4,"base_lr":0.0002,"final_lr":0.00002,"rank_w":1,"soft_w":0.5,"kd_w":0.1,"feas_w":0.5,"checkpoint_selection":"fixed_last_epoch","teacher_seed":2026110806}
+}

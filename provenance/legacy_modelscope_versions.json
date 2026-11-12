@@ -1,0 +1,7 @@
+{
+  "general": {
+    "repo": "Qwen/Qwen2.5-1.5B-Instruct",
+    "local_dir": "models/Qwen2.5-1.5B-Instruct",
+    "name_or_path": "Qwen/Qwen2.5-1.5B-Instruct"
+  }
+}

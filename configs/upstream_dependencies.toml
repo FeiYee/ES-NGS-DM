@@ -1,0 +1,25 @@
+# Upstream source is fetched from its owners, outside this repository.
+
+[dependencies.icp]
+url = "https://github.com/kaist-comet/TSPDroneICP.jl.git"
+revision = "becd5aa9f91c37f90d470b18a25937778065212f"
+directory = "TSPDroneICP.jl"
+
+[dependencies.icp.files]
+"src/main.jl" = "4a27e67cc8e5e38f18fc9417dfb272a334c577857dca3b00fd819aa4895c2ce7"
+"src/TSPDChain.jl" = "1afc9415c2d49a69abdba63d942191475a07a9c17916ff722ffb767a489b71b9"
+"src/rings.jl" = "f08e6ef1bb0acfc8112252d95472f69d2c5d30b7555014f9852f36c4adffb11a"
+"src/chainlets.jl" = "4c60e181ab55906b60c2d8f98dfb8088938414075b5ed41e8bc4c890ae97660e"
+"src/tsp.jl" = "a62c39a90286792a0a3c49d0dd7a17ae1e6f631ac3d4c947de0c9560729bb5b5"
+"src/utils.jl" = "8224d2a9de8d0908be40ba6aeb9ace68d458e9b74219260c5268aa691e7ccf3e"
+"src/icp.jl" = "9f89bfe266e545173fd1d885423643e71ed79c53ef709db91b0fee1bdaf699e8"
+"src/internals.jl" = "af3519aa02c09a23b7357ec22df786736b127ec72a02655189e83821b76c206a"
+
+[dependencies.tspdrone]
+url = "https://github.com/kaist-comet/TSPDrone.jl.git"
+revision = "4086e25cb2374fbe2ccb801926ba5459a6b3a1e8"
+directory = "TSPDrone.jl"
+
+[dependencies.tspdrone.files]
+"src/tspd_utils.jl" = "668aa3701c179243e7dfb7cb11f0978b1896ffc8a5fcabeb6faede63bb95df98"
+"src/tsp_ep_all.jl" = "85bcb0db3fcf4da8d58244c0d3e1c0d86ae024c7e2202802c300d2203043c276"

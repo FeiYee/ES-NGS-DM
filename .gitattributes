@@ -1,0 +1,7 @@
+# Preserve exact artifact bytes for cross-platform SHA256 verification.
+* -text
+*.png binary
+*.pt binary
+*.npy binary
+*.jls binary
+*.safetensors binary

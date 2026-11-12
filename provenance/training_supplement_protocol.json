@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-08",
+  "scope": "new supplementary controlled ablation; do not overwrite main paper results",
+  "data": "original 40 instance seeds, newly collected 120 base + 360 replay states",
+  "not_identical_old_states": "parent search uses wall-clock budgets",
+  "folds": 5,
+  "fold_group": "instance_id",
+  "student_schedule": {
+    "shared_exact_base_epochs": 40,
+    "matched_final_epochs": 12,
+    "batch_size": 4,
+    "learning_rates": [
+      0.0002,
+      2e-05
+    ],
+    "beta": 0.5,
+    "gamma": [
+      0,
+      0.1
+    ]
+  },
+  "teacher": {
+    "repo": "Qwen/Qwen2.5-1.5B",
+    "layers": 8,
+    "epochs": 4,
+    "max_length": 8192,
+    "residual_scale": "learned on training fold only"
+  },
+  "selection": "fixed final epochs, no validation selection",
+  "online": {
+    "cap_seconds": 60,
+    "search_seeds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "serial_same_hardware": true,
+    "propose_n": 64,
+    "top_k": 1
+  },
+  "statistics": "ranking mean/sample SD over five held-out folds; online mean/sample SD over 30 case-level seed means; paired Wilcoxon and Holm across three endpoints",
+  "top1_ties": "any exactly optimal feasible candidate within 1e-9 gain tolerance"
+}

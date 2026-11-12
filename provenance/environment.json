@@ -1,0 +1,8 @@
+{
+  "solver":{"language":"Julia","version":"1.10.5","lockfile":"Manifest.toml","supplement_lock_snapshot":"provenance/supplement_julia_Manifest.toml"},
+  "recorded_supplement_environment":{"os":"Windows","python":"3.10.11","torch":"2.12.1+cu130","numpy":"2.2.6","pandas":"2.3.3","transformers":"5.10.2","peft":"0.21.2","accelerate":"1.13.0","scipy":"1.15.3","safetensors":"0.7.0","huggingface_hub":"1.17.0","pyarrow":"23.0.1"},
+  "local_release_cpu_checks":{"os":"Windows","python":"3.11.9","torch":"2.15.0+cpu","numpy":"2.4.6","pandas":"3.0.5","scipy":"1.17.1"},
+  "historical_deployment_python_lock":"not recovered; final tensors and historical training arguments are preserved separately",
+  "threads":{"ESNGS_TORCH_THREADS":1},
+  "qwen_base_revision":"8faed761d45a263340a0528343f099c05c9a4323"
+}

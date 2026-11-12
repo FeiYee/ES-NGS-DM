@@ -1,0 +1,8 @@
+{
+  "model.py":{"source":"repro/es_ngs/model.py","experiment_sha256":"17bf59c03fdae7c00ed2c445958afad6500f27f06e714d063785dce4752ea037","unchanged":true},
+  "features.jl":{"source":"repro/es_ngs/features.jl","experiment_sha256":"974dcc5a030411226df37c5d57f8e5ca734762e8c1c7b011497ac3666c457134","unchanged":true},
+  "external_solver_dependencies":{"configuration":"configs/upstream_dependencies.toml","installed_separately":true,"upstream_source_bundled":false,"project_module":"ESNGSDM"},
+  "release_changes":["portable relative-path entry points","tab-separated scorer commands for paths containing spaces","fail-fast neural scoring","remove unused comparison imports and binary solver dependencies","fresh-run initialization and final-validation accounting","one final Synthetic-trained weight only","credential-free public metadata"],
+  "paper_run_selection":"accepted status=ok records, one run per case/seed, 150 Synthetic and 40 LaDe",
+  "paper_charged_time":"init_s + preprocess_s + search_s + validate_s"
+}
